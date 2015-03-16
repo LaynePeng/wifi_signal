@@ -201,7 +201,6 @@ def getWirelessNetworkBssList(wireless_interface):
 def getWirelessAvailableNetworkList(wireless_interface):
     """Returns a list of WirelessNetwork objects based on the wireless
        networks availables."""
-    print "In getWirelessAvailableNetworkList()"
     networks = []
     handle = WlanOpenHandle()
     network_list = WlanGetAvailableNetworkList(handle, wireless_interface.guid)
