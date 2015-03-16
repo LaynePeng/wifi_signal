@@ -179,6 +179,12 @@ def getWirelessInterfaces():
     return interfaces_list
 
 
+def scanWlan(wireless_interface):
+    handle = WlanOpenHandle()
+    result = WlanScan(handle, wireless_interface.guid)
+
+    return result
+
 def getWirelessNetworkBssList(wireless_interface):
     """Returns a list of WirelessNetworkBss objects based on the wireless
        networks availables."""

@@ -42,7 +42,7 @@ if __name__ == "__main__":
             print network.bss_type
             print ("Signal Quality: " + str(network.signal_quality) + "%")
 
-            best_streanth = −10
+            best_streanth = -10
             for bss in bssList:
                 if network.ssid == bss.ssid and bss.rssi < best_streanth:
                     best_streanth = bss.rssi
