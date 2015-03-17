@@ -35,10 +35,10 @@ def calDistance(freqInMHz, unit_strength, path_loss_exponent, signals):
     for signal in signals:
         print signal
         for ssid in signal.keys():
-            network_rssi = signal[ssid]["network_rssi"]
+            bss_rssi = signal[ssid]["bss_rssi"]
             #result = (unit_strength - (20 * math.log10(freqInMHz)) + math.fabs(network_rssi)) / 20.0
             #meters = math.pow(10, result)
-            meters = __general_modle(freqInMHz, unit_strength, path_loss_exponent, network_rssi)
+            meters = __general_modle(freqInMHz, unit_strength, path_loss_exponent, bss_rssi)
             one_distance = {}
             one_distance[ssid] = meters
 

@@ -15,7 +15,7 @@ def __show_help():
 
 def __cal_distances(signals):
     #dLink_transmit_power = 15
-    unit_strength = -63
+    unit_strength = -37
     freqInMHz  = 2462
     path_loss_exponent = 2
     return calDistance(freqInMHz, unit_strength, path_loss_exponent, signals)
