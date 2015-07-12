@@ -2,6 +2,7 @@ Location Tracking with WIFI
 =======
 
 This project will track the location of a WIFI receiver. Think if a machine includes a WIFI module, we can use this project to locate it in a 2D space. For ths feature, it includes two part:
+
 1. Obtain the WIFI signal strength of a WIFI receiver. This part is sourced from [PyWiWiProject](https://github.com/6e726d/PyWiWi). It is a straightforward project to gain WIFI signal strength by Windows native API. We choose this it just for the easy demo purpose. 
 2. A trilateration algorithm to calculate location coordinate by determining the distance 
 
